@@ -15,7 +15,7 @@
 				</aside>
 
 				<aside>
-					<?php wp_nav_menu( array( 'theme_location' => 'footer_menu' ) ); ?>
+					<?php html5blank_footernav(); ?>
 				</aside>
 
 			</footer>
@@ -35,6 +35,8 @@
 		ga('create', 'UA-XXXXXXXX-XX', 'yourdomain.com');
 		ga('send', 'pageview');
 		</script>
-
+		
+		<!-- chat window -->
+<script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: 'decf7cbf-3f2a-4eb6-96ce-822b1e018b64', f: true }); done = true; } }; })();</script>
 	</body>
 </html>

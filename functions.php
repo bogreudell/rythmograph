@@ -87,6 +87,30 @@ function html5blank_nav()
 	);
 }
 
+function html5blank_footernav()
+{
+    wp_nav_menu(
+    array(
+        'theme_location'  => 'footer-menu',
+        'menu'            => '',
+        'container'       => 'div',
+        'container_class' => 'menu-{menu slug}-container',
+        'container_id'    => '',
+        'menu_class'      => 'menu',
+        'menu_id'         => '',
+        'echo'            => true,
+        'fallback_cb'     => 'wp_page_menu',
+        'before'          => '',
+        'after'           => '',
+        'link_before'     => '',
+        'link_after'      => '',
+        'items_wrap'      => '<ul>%3$s</ul>',
+        'depth'           => 0,
+        'walker'          => ''
+        )
+    );
+}
+
 // Load HTML5 Blank scripts (header.php)
 function html5blank_header_scripts()
 {
@@ -489,6 +513,22 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
     Custom Functions
 \*------------------------------------*/
 
+// function reset_editor()
+// {
+//      global $_wp_post_type_features;
+
+//      $post_type="page";
+//      $feature = "editor";
+//      if ( !isset($_wp_post_type_features[$post_type]) )
+//      {
+
+//      }
+//      elseif ( isset($_wp_post_type_features[$post_type][$feature]) )
+//      unset($_wp_post_type_features[$post_type][$feature]);
+// }
+
+// add_action("init","reset_editor");
+
 // mail form 
 function contact_form_markup() {
 
@@ -563,7 +603,7 @@ function rt_cf_shortcode() {
 add_shortcode( 'contact_form', 'rt_cf_shortcode' );
 
 /*------------------------------------*\
-    Custom Fields
+    Custom Fieldsa
 \*------------------------------------*/
 
 if( function_exists('acf_add_local_field_group') ):
