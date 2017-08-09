@@ -532,6 +532,8 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 // mail form 
 function contact_form_markup() {
 
+    // $subject = $_GET['subject'];
+
     echo '<div class="form-page">';
     echo '<h1>Contact us</h1>';
     echo '<form class="no-close" enctype="multipart/form-data" action="' . esc_url( $_SERVER['REQUEST_URI'] ) . '" method="post">';
@@ -543,10 +545,17 @@ function contact_form_markup() {
     echo '<label for="name">Name</label>';
     echo '</div>';
     echo '<div class="input col-1">';
-    echo '<input id="email" type="text" name="rt-email" value="' . ( isset( $_POST["rt-name"] ) ? esc_attr( $_POST["rt-email"] ) : '' ) . '" required>';
+    echo '<input id="email" type="text" name="rt-email" value="' . ( isset( $_POST["rt-email"] ) ? esc_attr( $_POST["rt-email"] ) : '' ) . '" required>';
     echo '<span class="highlight"></span>';
     echo '<span class="bar"></span>';
     echo '<label for="email">Email</label>';
+    echo '</div>';
+    echo '<div class="input col-1">';
+    echo '<input id="subject" type="text" name="rt-subject" value="' . ( isset( $_POST["rt-subject"] ) ? esc_attr( $_POST["rt-subject"] ) : '' ) . '" required>';
+    // echo '<input id="subject" type="text" name="rt-subject" value="' . $subject . '" required>';
+    echo '<span class="highlight"></span>';
+    echo '<span class="bar"></span>';
+    echo '<label for="subject">Subject</label>';
     echo '</div>';
     echo '<div class="input col-2">';
     echo '<textarea name="rt-message" id="message" cols="30" rows="1">' . ( isset( $_POST["rt-message"] ) ? esc_attr( $_POST["rt-message"] ) : '' ) . '</textarea>';
@@ -570,13 +579,14 @@ function deliver_contact_mail() {
         // collect form values
         $name = sanitize_text_field( $_POST['rt-name'] );
         $email = sanitize_email( $_POST['rt-email'] );
+        $subject = sanitize_email( $_POST['rt-subject'] );
         $message = esc_textarea( $_POST['rt-message'] );
 
         $boundary =md5(date('r', time()));
 
-        $to = 'hello@wikitongues.org'; //get_option( 'admin_email' );
+        $to = 'daniel@matteprojects.com'; //get_option( 'admin_email' );
 
-        $subject = "New message";
+        $subject = "$subject";
 
         $headers = "From: $name <$email>" . "\r\n";
 
