@@ -19,7 +19,7 @@ if( $post_object ):
 			<h1><?php echo $title; ?></h1>
 			<?php if ( $subtitle ): ?><h2><?php echo $subtitle; ?></h2><?php endif; ?>
 			<p><?php echo $excerpt; ?></p>
-			<!-- how does "inquire about work? -->
+			<p><a href="<?php bloginfo('url'); ?>/contact?subject=<?php echo "Inquiry re: " . $title; ?>">Inquire about <?php echo $title; ?></a></p>
 		</aside>
 	</div>
 	<?php wp_reset_postdata(); ?>

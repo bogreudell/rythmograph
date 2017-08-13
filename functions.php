@@ -87,6 +87,30 @@ function html5blank_nav()
 	);
 }
 
+function html5blank_footernav()
+{
+    wp_nav_menu(
+    array(
+        'theme_location'  => 'footer-menu',
+        'menu'            => '',
+        'container'       => 'div',
+        'container_class' => 'menu-{menu slug}-container',
+        'container_id'    => '',
+        'menu_class'      => 'menu',
+        'menu_id'         => '',
+        'echo'            => true,
+        'fallback_cb'     => 'wp_page_menu',
+        'before'          => '',
+        'after'           => '',
+        'link_before'     => '',
+        'link_after'      => '',
+        'items_wrap'      => '<ul>%3$s</ul>',
+        'depth'           => 0,
+        'walker'          => ''
+        )
+    );
+}
+
 // Load HTML5 Blank scripts (header.php)
 function html5blank_header_scripts()
 {
@@ -489,8 +513,26 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
     Custom Functions
 \*------------------------------------*/
 
+// function reset_editor()
+// {
+//      global $_wp_post_type_features;
+
+//      $post_type="page";
+//      $feature = "editor";
+//      if ( !isset($_wp_post_type_features[$post_type]) )
+//      {
+
+//      }
+//      elseif ( isset($_wp_post_type_features[$post_type][$feature]) )
+//      unset($_wp_post_type_features[$post_type][$feature]);
+// }
+
+// add_action("init","reset_editor");
+
 // mail form
 function contact_form_markup() {
+
+    // $subject = $_GET['subject'];
 
     echo '<div class="form-page">';
     echo '<h1>Contact us</h1>';
@@ -523,13 +565,14 @@ function deliver_contact_mail() {
         // collect form values
         $name = sanitize_text_field( $_POST['rt-name'] );
         $email = sanitize_email( $_POST['rt-email'] );
+        $subject = sanitize_email( $_POST['rt-subject'] );
         $message = esc_textarea( $_POST['rt-message'] );
 
         $boundary =md5(date('r', time()));
 
-        $to = 'hello@wikitongues.org'; //get_option( 'admin_email' );
+        $to = 'daniel@matteprojects.com'; //get_option( 'admin_email' );
 
-        $subject = "New message";
+        $subject = "$subject";
 
         $headers = "From: $name <$email>" . "\r\n";
 
@@ -556,7 +599,7 @@ function rt_cf_shortcode() {
 add_shortcode( 'contact_form', 'rt_cf_shortcode' );
 
 /*------------------------------------*\
-    Custom Fields
+    Custom Fieldsa
 \*------------------------------------*/
 
 if( function_exists('acf_add_local_field_group') ):

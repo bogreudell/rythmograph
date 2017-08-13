@@ -4,7 +4,7 @@
 		<!-- section -->
 		<section>
 
-			<!-- contact form -->
+			<?php echo do_shortcode('contact_form'); ?>
 
 		</section>
 		<!-- /section -->

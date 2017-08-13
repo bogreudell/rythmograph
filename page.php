@@ -1,5 +1,13 @@
 <?php get_header(); ?>
 
+	<?php
+
+	// get url parameters
+
+	// $subject = $_GET['subject'];
+
+	?>
+
 	<main role="main">
 		<!-- section -->
 		<section>
