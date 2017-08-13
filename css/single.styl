@@ -1,0 +1,56 @@
+section
+  float left
+
+  .post-module
+    float left
+    overflow hidden
+
+    aside
+      box-sizing border-box
+      float left
+      width 50vw
+      height 45vw
+      margin 0
+      padding 0
+
+      img
+        width 100%
+        float left
+
+      &:not(.text)
+        background #d4e5f3
+        background -webkit-linear-gradient(to bottom, #eef2f3, #d4e5f3)
+        background linear-gradient(to bottom, #eef2f3, #d4e5f3)
+
+      &.text
+        padding-top 90px
+        position relative
+
+        h1,
+        h2,
+        p
+          max-width 390px
+          margin 0 auto
+
+        h1,
+        h2
+          text-align right
+
+        h1
+          line-height 1.1
+          font-size 78px
+          word-spacing 5rem
+
+        h2
+          font-size 48px
+
+        p
+          font-weight 100
+          position absolute
+          bottom 90px
+          left 50%
+          margin-left -195px
+
+    &:nth-of-type(2n)
+      aside
+        float right

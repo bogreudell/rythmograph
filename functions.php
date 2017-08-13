@@ -118,7 +118,7 @@ function html5blank_styles()
     wp_register_style('normalize', get_template_directory_uri() . '/css/normalize.css', array(), '1.0', 'all');
     wp_enqueue_style('normalize'); // Enqueue it!
 
-    wp_register_style('html5blank', get_template_directory_uri() . '/css/style.css', array(), '1.0', 'all');
+    wp_register_style('html5blank', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
     wp_enqueue_style('html5blank'); // Enqueue it!
 }
 
@@ -489,31 +489,24 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
     Custom Functions
 \*------------------------------------*/
 
-// mail form 
+// mail form
 function contact_form_markup() {
 
     echo '<div class="form-page">';
     echo '<h1>Contact us</h1>';
     echo '<form class="no-close" enctype="multipart/form-data" action="' . esc_url( $_SERVER['REQUEST_URI'] ) . '" method="post">';
     echo '<div class="grouping">';
-    echo '<div class="input col-1">';
-    echo '<input id="name" type="text" name="rt-name" value="' . ( isset( $_POST["rt-name"] ) ? esc_attr( $_POST["rt-name"] ) : '' ) . '" required>';
-    echo '<span class="highlight"></span>';
-    echo '<span class="bar"></span>';
+    echo '<div class="input">';
     echo '<label for="name">Name</label>';
+    echo '<input id="name" type="text" name="rt-name" placeholder="Felicity Fox" value="' . ( isset( $_POST["rt-name"] ) ? esc_attr( $_POST["rt-name"] ) : '' ) . '" required>';
     echo '</div>';
-    echo '<div class="input col-1">';
-    echo '<input id="email" type="text" name="rt-email" value="' . ( isset( $_POST["rt-name"] ) ? esc_attr( $_POST["rt-email"] ) : '' ) . '" required>';
-    echo '<span class="highlight"></span>';
-    echo '<span class="bar"></span>';
+    echo '<div class="input">';
     echo '<label for="email">Email</label>';
+    echo '<input id="email" type="text" name="rt-email" placeholder="felicity.fox@fantasticfoxes.net" value="' . ( isset( $_POST["rt-name"] ) ? esc_attr( $_POST["rt-email"] ) : '' ) . '" required>';
     echo '</div>';
-    echo '<div class="input col-2">';
-    echo '<textarea name="rt-message" id="message" cols="30" rows="1">' . ( isset( $_POST["rt-message"] ) ? esc_attr( $_POST["rt-message"] ) : '' ) . '</textarea>';
-    echo '<span class="highlight"></span>';
-    echo '<span class="bar"></span>';
-    echo '<div class="hiddenDiv"></div>';
+    echo '<div class="input">';
     echo '<label for="message">Message</label>';
+    echo '<textarea name="rt-message" id="message" cols="30" rows="1" placeholder="Say hello!">' . ( isset( $_POST["rt-message"] ) ? esc_attr( $_POST["rt-message"] ) : '' ) . '</textarea>';
     echo '</div>';
     echo '</div>';
     echo '<input class="no-close" id="submit" type="submit" name="rt-submitted" value="Submit">';;

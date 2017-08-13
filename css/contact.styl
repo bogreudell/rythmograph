@@ -1,0 +1,55 @@
+section
+  width 100%
+
+  #post-27
+    width 100%
+    float left
+    display inline-block
+
+    aside
+      width 50vw
+      height 45vw
+      float left
+
+      img
+        width 100%
+        float left
+
+      &:not(.text)
+        background #d4e5f3
+        background -webkit-linear-gradient(to bottom, #eef2f3, #d4e5f3)
+        background linear-gradient(to bottom, #eef2f3, #d4e5f3)
+
+      .form-page
+        width 400px
+        margin auto
+
+        h1
+          font-size 78px
+
+        form
+          .grouping
+            .input
+              margin-bottom 1rem
+
+              label
+                display block
+                margin-bottom .5rem
+
+              input, textarea
+                width 400px
+                padding .5rem
+                font-size 1.5rem
+                box-sizing border-box
+                border none
+                border-bottom 5px solid #232B2B
+                resize vertical
+                +placeholder()
+                  color lighten(#232B2B,80%)
+
+          input#submit
+            width 100%
+            background transparent
+            font-size 2rem
+            border none
+            margin-top 1rem

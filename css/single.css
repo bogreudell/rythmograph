@@ -1,0 +1,56 @@
+section {
+  float: left;
+}
+section .post-module {
+  float: left;
+  overflow: hidden;
+}
+section .post-module aside {
+  box-sizing: border-box;
+  float: left;
+  width: 50vw;
+  height: 45vw;
+  margin: 0;
+  padding: 0;
+}
+section .post-module aside img {
+  width: 100%;
+  float: left;
+}
+section .post-module aside:not(.text) {
+  background: #d4e5f3;
+  background: -webkit-linear-gradient(to bottom, #eef2f3, #d4e5f3);
+  background: linear-gradient(to bottom, #eef2f3, #d4e5f3);
+}
+section .post-module aside.text {
+  padding-top: 90px;
+  position: relative;
+}
+section .post-module aside.text h1,
+section .post-module aside.text h2,
+section .post-module aside.text p {
+  max-width: 390px;
+  margin: 0 auto;
+}
+section .post-module aside.text h1,
+section .post-module aside.text h2 {
+  text-align: right;
+}
+section .post-module aside.text h1 {
+  line-height: 1.1;
+  font-size: 78px;
+  word-spacing: 5rem;
+}
+section .post-module aside.text h2 {
+  font-size: 48px;
+}
+section .post-module aside.text p {
+  font-weight: 100;
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  margin-left: -195px;
+}
+section .post-module:nth-of-type(2n) aside {
+  float: right;
+}

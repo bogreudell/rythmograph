@@ -1,0 +1,31 @@
+footer {
+  background-color: #232b2b;
+  display: inline-block;
+  width: 100%;
+  padding: 3.75rem 8.75rem;
+  box-sizing: border-box;
+  float: left;
+}
+footer * {
+  color: #fff;
+  font-weight: 400;
+}
+footer aside {
+  float: left;
+  width: 50%;
+}
+footer aside .menu ul {
+  margin: 0;
+  list-style-type: none;
+  display: inline-block;
+  float: right;
+}
+footer aside .menu ul li a {
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  font-weight: 400;
+}
+footer aside .menu ul li.current_page_item a::before {
+  content: "• ";
+}

@@ -1,0 +1,203 @@
+* {
+  color: #232b2b;
+  font-family: europa, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+header {
+  width: 100%;
+  display: inline-block;
+  height: 72px;
+  float: left;
+}
+header .logo {
+  float: left;
+  height: 72px;
+  width: 72px;
+}
+header nav {
+  float: right;
+  padding-right: 0.5rem;
+}
+header nav ul {
+  margin: 0;
+  list-style-type: none;
+  display: inline-block;
+}
+header nav ul li {
+  display: inline-block;
+  float: left;
+}
+header nav ul li a {
+  display: block;
+  padding: 1.5rem 1rem;
+  text-decoration: none;
+  font-weight: 400;
+}
+header nav ul li.current_page_item a::before {
+  content: "• ";
+}
+footer {
+  background-color: #232b2b;
+  display: inline-block;
+  width: 100%;
+  padding: 3.75rem 8.75rem;
+  box-sizing: border-box;
+  float: left;
+}
+footer * {
+  color: #fff;
+  font-weight: 400;
+}
+footer aside {
+  float: left;
+  width: 50%;
+}
+footer aside .menu ul {
+  margin: 0;
+  list-style-type: none;
+  display: inline-block;
+  float: right;
+}
+footer aside .menu ul li a {
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  font-weight: 400;
+}
+footer aside .menu ul li.current_page_item a::before {
+  content: "• ";
+}
+body.home .jumbo {
+  padding: 0 8.75rem;
+  margin: auto;
+}
+body.home .jumbo h1 {
+  font-size: 78px;
+  margin-top: 2rem;
+}
+section {
+  float: left;
+}
+section .post-module {
+  float: left;
+  overflow: hidden;
+}
+section .post-module aside {
+  box-sizing: border-box;
+  float: left;
+  width: 50vw;
+  height: 45vw;
+  margin: 0;
+  padding: 0;
+}
+section .post-module aside img {
+  width: 100%;
+  float: left;
+}
+section .post-module aside:not(.text) {
+  background: #d4e5f3;
+  background: -webkit-linear-gradient(to bottom, #eef2f3, #d4e5f3);
+  background: linear-gradient(to bottom, #eef2f3, #d4e5f3);
+}
+section .post-module aside.text {
+  padding-top: 90px;
+  position: relative;
+}
+section .post-module aside.text h1,
+section .post-module aside.text h2,
+section .post-module aside.text p {
+  max-width: 390px;
+  margin: 0 auto;
+}
+section .post-module aside.text h1,
+section .post-module aside.text h2 {
+  text-align: right;
+}
+section .post-module aside.text h1 {
+  line-height: 1.1;
+  font-size: 78px;
+  word-spacing: 5rem;
+}
+section .post-module aside.text h2 {
+  font-size: 48px;
+}
+section .post-module aside.text p {
+  font-weight: 100;
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  margin-left: -195px;
+}
+section .post-module:nth-of-type(2n) aside {
+  float: right;
+}
+section {
+  width: 100%;
+}
+section #post-27 {
+  width: 100%;
+  float: left;
+  display: inline-block;
+}
+section #post-27 aside {
+  width: 50vw;
+  height: 45vw;
+  float: left;
+}
+section #post-27 aside img {
+  width: 100%;
+  float: left;
+}
+section #post-27 aside:not(.text) {
+  background: #d4e5f3;
+  background: -webkit-linear-gradient(to bottom, #eef2f3, #d4e5f3);
+  background: linear-gradient(to bottom, #eef2f3, #d4e5f3);
+}
+section #post-27 aside .form-page {
+  width: 400px;
+  margin: auto;
+}
+section #post-27 aside .form-page h1 {
+  font-size: 78px;
+}
+section #post-27 aside .form-page form .grouping .input {
+  margin-bottom: 1rem;
+}
+section #post-27 aside .form-page form .grouping .input label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+section #post-27 aside .form-page form .grouping .input input,
+section #post-27 aside .form-page form .grouping .input textarea {
+  width: 400px;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 5px solid #232b2b;
+  resize: vertical;
+}
+section #post-27 aside .form-page form .grouping .input input::-webkit-input-placeholder,
+section #post-27 aside .form-page form .grouping .input textarea::-webkit-input-placeholder {
+  color: #cfd8d8;
+}
+section #post-27 aside .form-page form .grouping .input input:-moz-placeholder,
+section #post-27 aside .form-page form .grouping .input textarea:-moz-placeholder {
+  color: #cfd8d8;
+}
+section #post-27 aside .form-page form .grouping .input input::-moz-placeholder,
+section #post-27 aside .form-page form .grouping .input textarea::-moz-placeholder {
+  color: #cfd8d8;
+}
+section #post-27 aside .form-page form .grouping .input input:-ms-input-placeholder,
+section #post-27 aside .form-page form .grouping .input textarea:-ms-input-placeholder {
+  color: #cfd8d8;
+}
+section #post-27 aside .form-page form input#submit {
+  width: 100%;
+  background: transparent;
+  font-size: 2rem;
+  border: none;
+  margin-top: 1rem;
+}

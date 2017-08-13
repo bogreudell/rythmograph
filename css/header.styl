@@ -1,0 +1,34 @@
+header
+  width 100%
+  display inline-block
+  height 72px
+  float left
+
+  .logo
+    float left
+    height 72px
+    width 72px
+
+  nav
+    float right
+    padding-right .5rem
+
+    ul
+      margin 0
+      list-style-type none
+      display inline-block
+
+      li
+        display inline-block
+        float left
+
+        a
+          display block
+          padding 1.5rem 1rem
+          text-decoration none
+          font-weight 400
+
+        &.current_page_item
+              a
+                &::before
+                  content "• "
