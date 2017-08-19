@@ -18,8 +18,10 @@ if( $post_object ):
 		<aside class="text">
 			<h1><?php echo $title; ?></h1>
 			<?php if ( $subtitle ): ?><h2><?php echo $subtitle; ?></h2><?php endif; ?>
-			<p><?php echo $excerpt; ?></p>
-			<p><a href="<?php bloginfo('url'); ?>/contact?subject=<?php echo "Inquiry re: " . $title; ?>">Inquire about <?php echo $title; ?></a></p>
+			<span>
+                    <p><?php echo $excerpt; ?></p>
+                    <a class="inquire" href="<?php bloginfo('url'); ?>/contact?subject=<?php echo "Inquiry re: " . $title; ?>">Inquire about <?php echo $title; ?></a>
+                  </span>
 		</aside>
 	</div>
 	<?php wp_reset_postdata(); ?>

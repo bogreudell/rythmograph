@@ -44,12 +44,24 @@ section .post-module aside.text h1 {
 section .post-module aside.text h2 {
   font-size: 48px;
 }
-section .post-module aside.text p {
-  font-weight: 100;
+section .post-module aside.text span {
   position: absolute;
-  bottom: 90px;
+  bottom: 0;
   left: 50%;
   margin-left: -195px;
+}
+section .post-module aside.text span p {
+  font-weight: 100;
+}
+section .post-module aside.text span a {
+  font-size: 20pt;
+  float: none;
+  padding: 45px 0;
+  font-weight: 400;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  text-align: center;
 }
 section .post-module:nth-of-type(2n) aside {
   float: right;
