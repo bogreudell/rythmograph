@@ -1,8 +1,12 @@
 body.home .jumbo {
   padding: 0 8.75rem;
   margin: auto;
+  display: inline-block;
 }
 body.home .jumbo h1 {
   font-size: 78px;
   margin-top: 2rem;
+}
+body.home .jumbo h1:last-of-type {
+  margin-bottom: 1.5em;
 }

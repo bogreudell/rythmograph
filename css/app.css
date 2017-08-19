@@ -71,10 +71,14 @@ footer aside .menu ul li.current_page_item a::before {
 body.home .jumbo {
   padding: 0 8.75rem;
   margin: auto;
+  display: inline-block;
 }
 body.home .jumbo h1 {
   font-size: 78px;
   margin-top: 2rem;
+}
+body.home .jumbo h1:last-of-type {
+  margin-bottom: 1.5em;
 }
 section {
   float: left;
@@ -212,4 +216,18 @@ section #post-27 aside .form-page form input#submit {
   font-size: 2rem;
   border: none;
   margin-top: 1rem;
+}
+.white {
+  display: inline-block;
+  width: 100%;
+  float: left;
+}
+.white .owl-carousel {
+  float: left;
+}
+.white .owl-carousel .owl-stage-outer .owl-stage .owl-item .sa_hover_container {
+  height: 600px;
+}
+.white .owl-carousel .owl-stage-outer .owl-stage .owl-item .sa_hover_container img {
+  height: 100%;
 }

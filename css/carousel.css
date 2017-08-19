@@ -1,0 +1,14 @@
+.white {
+  display: inline-block;
+  width: 100%;
+  float: left;
+}
+.white .owl-carousel {
+  float: left;
+}
+.white .owl-carousel .owl-stage-outer .owl-stage .owl-item .sa_hover_container {
+  height: 600px;
+}
+.white .owl-carousel .owl-stage-outer .owl-stage .owl-item .sa_hover_container img {
+  height: 100%;
+}
