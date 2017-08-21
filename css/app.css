@@ -53,19 +53,19 @@ footer aside {
   float: left;
   width: 50%;
 }
-footer aside .menu ul {
+footer aside ul {
   margin: 0;
   list-style-type: none;
   display: inline-block;
   float: right;
 }
-footer aside .menu ul li a {
+footer aside ul li a {
   display: block;
   text-align: right;
   text-decoration: none;
   font-weight: 400;
 }
-footer aside .menu ul li.current_page_item a::before {
+footer aside ul li.current_page_item a::before {
   content: "• ";
 }
 body.home .jumbo {
@@ -84,13 +84,14 @@ section {
   float: left;
 }
 section .post-module {
-  float: left;
+  margin: auto;
   overflow: hidden;
+  width: 100%;
 }
 section .post-module aside {
   box-sizing: border-box;
   float: left;
-  width: 50vw;
+  width: 50%;
   height: 45vw;
   margin: 0;
   padding: 0;

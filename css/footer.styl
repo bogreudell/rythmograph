@@ -14,21 +14,20 @@ footer
     float left
     width 50%
 
-    .menu
-      ul
-        margin 0
-        list-style-type none
-        display inline-block
-        float right
+    ul
+      margin 0
+      list-style-type none
+      display inline-block
+      float right
 
-        li
+      li
+        a
+          display block
+          text-align right
+          text-decoration none
+          font-weight 400
+
+        &.current_page_item
           a
-            display block
-            text-align right
-            text-decoration none
-            font-weight 400
-
-          &.current_page_item
-            a
-              &::before
-                content "• "
+            &::before
+              content "• "
