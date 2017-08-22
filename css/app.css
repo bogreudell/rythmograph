@@ -28,6 +28,9 @@ header nav ul li {
   display: inline-block;
   float: left;
 }
+header nav ul li:first-of-type {
+  display: none;
+}
 header nav ul li a {
   display: block;
   padding: 1.5rem 1rem;
@@ -197,19 +200,19 @@ section #post-27 aside .form-page form .grouping .input textarea {
 }
 section #post-27 aside .form-page form .grouping .input input::-webkit-input-placeholder,
 section #post-27 aside .form-page form .grouping .input textarea::-webkit-input-placeholder {
-  color: #cfd8d8;
+  color: #b8c5c5;
 }
 section #post-27 aside .form-page form .grouping .input input:-moz-placeholder,
 section #post-27 aside .form-page form .grouping .input textarea:-moz-placeholder {
-  color: #cfd8d8;
+  color: #b8c5c5;
 }
 section #post-27 aside .form-page form .grouping .input input::-moz-placeholder,
 section #post-27 aside .form-page form .grouping .input textarea::-moz-placeholder {
-  color: #cfd8d8;
+  color: #b8c5c5;
 }
 section #post-27 aside .form-page form .grouping .input input:-ms-input-placeholder,
 section #post-27 aside .form-page form .grouping .input textarea:-ms-input-placeholder {
-  color: #cfd8d8;
+  color: #b8c5c5;
 }
 section #post-27 aside .form-page form input#submit {
   width: 100%;
@@ -231,4 +234,97 @@ section #post-27 aside .form-page form input#submit {
 }
 .white .owl-carousel .owl-stage-outer .owl-stage .owl-item .sa_hover_container img {
   height: 100%;
+}
+@media only screen and (max-device-width: 667px) {
+  body header nav {
+    max-width: 70%;
+  }
+  body header nav ul li:first-of-type {
+    display: inline-block;
+    font-size: 0;
+    width: 42px;
+  }
+  body header nav ul li:first-of-type a {
+    padding: 0;
+  }
+  body header nav ul li:first-of-type:after {
+    content: "⋮";
+    font-size: 30px;
+    display: block;
+    font-weight: 900;
+    text-align: center;
+    padding: 15px 0;
+  }
+  body header nav ul li:not(:first-of-type) {
+    display: none;
+  }
+  body.home .jumbo {
+    padding: 0 1.75rem;
+  }
+  body.home .jumbo h1 {
+    font-size: 35px;
+    margin-top: 0;
+  }
+  body .white .owl-carousel .owl-stage-outer .owl-stage .owl-item .sa_hover_container {
+    height: 400px;
+  }
+  body footer {
+    padding: 0 1.75rem;
+  }
+  body footer aside ul {
+    margin-top: 1em;
+  }
+  body section .post-module aside {
+    height: initial;
+    width: 100%;
+  }
+  body section .post-module aside.text {
+    padding: 0 1rem;
+  }
+  body section .post-module aside.text h1 {
+    padding: 1rem 0.5rem 0;
+    font-size: 23px;
+    word-spacing: initial;
+    text-align: left;
+  }
+  body section .post-module aside.text h2 {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    padding-left: 0.5rem;
+    margin-top: 0.25rem;
+  }
+  body section .post-module aside.text span {
+    position: initial;
+    margin-left: initial;
+  }
+  body section .post-module aside.text span p {
+    font-size: 0.7rem;
+    padding: 1rem 0.5rem 1.5rem;
+  }
+  body section .post-module aside.text span a {
+    display: none;
+  }
+  body section #post-27 aside {
+    width: 100%;
+    height: initial;
+  }
+  body section #post-27 aside:first-of-type {
+    max-height: 50vh;
+    overflow: hidden;
+  }
+  body section #post-27 aside.text .form-page {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  body section #post-27 aside.text .form-page h1 {
+    font-size: 28px;
+  }
+  body section #post-27 aside.text .form-page form .grouping .input input,
+  body section #post-27 aside.text .form-page form .grouping .input textarea {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 300;
+  }
 }

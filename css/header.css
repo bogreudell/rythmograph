@@ -22,6 +22,9 @@ header nav ul li {
   display: inline-block;
   float: left;
 }
+header nav ul li:first-of-type {
+  display: none;
+}
 header nav ul li a {
   display: block;
   padding: 1.5rem 1rem;

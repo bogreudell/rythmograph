@@ -1,0 +1,110 @@
+@media only screen and (max-device-width : 667px)
+  body
+    header
+      nav
+        max-width 70%
+
+        ul
+          li
+            &:first-of-type
+              display inline-block
+              font-size 0
+              width 42px
+
+              a
+                padding 0
+
+              &:after
+                content "⋮"
+                font-size 30px
+                display block
+                font-weight 900
+                text-align center
+                padding 15px 0
+
+            &:not(:first-of-type)
+              display none
+
+    &.home
+      .jumbo
+        padding 0 1.75rem
+
+        h1
+          font-size 35px
+          margin-top 0
+
+    .white
+      .owl-carousel
+        .owl-stage-outer
+          .owl-stage
+            .owl-item
+              .sa_hover_container
+                height 400px
+
+    footer
+      padding 0 1.75rem
+
+      aside
+        ul
+          margin-top 1em
+
+    // Single
+    section
+      .post-module
+        aside
+          height initial
+          width 100%
+
+          &.text
+            padding 0 1rem
+
+            h1
+              padding 1rem .5rem 0
+              font-size 23px
+              word-spacing initial
+              text-align left
+
+            h2
+              font-size 14px
+              font-weight 400
+              text-align left
+              padding-left .5rem
+              margin-top .25rem
+
+            span
+              position initial
+              margin-left initial
+
+              p
+                font-size .7rem
+                padding 1rem .5rem 1.5rem
+
+              a
+                display none
+
+      #post-27
+        aside
+          width 100%
+          height initial
+
+          &:first-of-type
+            max-height 50vh
+            overflow hidden
+
+          &.text
+            .form-page
+              width 100%
+              padding 1rem
+              box-sizing border-box
+
+              h1
+                font-size 28px
+
+              form
+                .grouping
+                  .input
+                    input,
+                    textarea
+                      width 100%
+                      font-size 1rem
+                      font-weight 300
