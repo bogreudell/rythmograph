@@ -25,6 +25,7 @@ section .post-module aside:not(.text) {
 }
 section .post-module aside.text {
   padding-top: 90px;
+  padding-top: 6vw;
   position: relative;
 }
 section .post-module aside.text h1,
@@ -40,10 +41,12 @@ section .post-module aside.text h2 {
 section .post-module aside.text h1 {
   line-height: 1.1;
   font-size: 78px;
+  font-size: 5.5vw;
   word-spacing: 5rem;
 }
 section .post-module aside.text h2 {
   font-size: 48px;
+  font-size: 3.3vw;
 }
 section .post-module aside.text span {
   position: absolute;

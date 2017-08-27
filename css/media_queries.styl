@@ -1,6 +1,9 @@
 @media only screen and (max-device-width : 667px)
   body
     header
+      .logo
+        position relative
+        z-index 20
       nav
         max-width 70%
 
@@ -25,6 +28,39 @@
             &:not(:first-of-type)
               display none
 
+
+        &.mobile-open
+          position absolute
+          right 0
+          left 0
+          bottom 0
+          top 0
+          background white
+          max-width 100%
+          z-index 10
+          padding-right 0
+
+          ul
+            padding-left 0
+
+            li
+              width 100%
+              display block
+
+              a
+                padding-left 56px
+
+              &:nth-of-type(1)
+                width 42px
+                float right
+                padding-right 8px
+
+                &:after
+                  content "×"
+                  font-weight 100
+                  padding 9px 0 9px
+                  font-size 36px
+
     &.home
       .jumbo
         padding 0 1.75rem
@@ -39,14 +75,24 @@
           .owl-stage
             .owl-item
               .sa_hover_container
-                height 400px
+                height 100%
+              img
+                width 100%
 
     footer
       padding 0 1.75rem
 
       aside
+        width 100%
+
         ul
-          margin-top 1em
+          float left
+          margin 1em 0 2em
+          padding-left 0
+
+          li
+            a
+              text-align left
 
     // Single
     section
@@ -80,7 +126,8 @@
                 padding 1rem .5rem 1.5rem
 
               a
-                display none
+                padding 0 0 25px 0
+                font-size 18px
 
       #post-27
         aside

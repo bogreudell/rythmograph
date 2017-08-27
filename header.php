@@ -5,7 +5,8 @@
 		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
 
             <script src="https://use.typekit.net/rxe2znr.js"></script>
-            <script>try{Typekit.load({ async: true });}catch(e){}</script>
+            <!-- <script>try{Typekit.load({ async: true });}catch(e){}</script> -->
+            <script>try{Typekit.load({async:!1})}catch(a){}</script>
 
             <link href="//www.google-analytics.com" rel="dns-prefetch">
 

@@ -110,6 +110,7 @@ section .post-module aside:not(.text) {
 }
 section .post-module aside.text {
   padding-top: 90px;
+  padding-top: 6vw;
   position: relative;
 }
 section .post-module aside.text h1,
@@ -125,10 +126,12 @@ section .post-module aside.text h2 {
 section .post-module aside.text h1 {
   line-height: 1.1;
   font-size: 78px;
+  font-size: 5.5vw;
   word-spacing: 5rem;
 }
 section .post-module aside.text h2 {
   font-size: 48px;
+  font-size: 3.3vw;
 }
 section .post-module aside.text span {
   position: absolute;
@@ -236,6 +239,10 @@ section #post-27 aside .form-page form input#submit {
   height: 100%;
 }
 @media only screen and (max-device-width: 667px) {
+  body header .logo {
+    position: relative;
+    z-index: 20;
+  }
   body header nav {
     max-width: 70%;
   }
@@ -258,6 +265,38 @@ section #post-27 aside .form-page form input#submit {
   body header nav ul li:not(:first-of-type) {
     display: none;
   }
+  body header nav.mobile-open {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background: #fff;
+    max-width: 100%;
+    z-index: 10;
+    padding-right: 0;
+  }
+  body header nav.mobile-open ul {
+    padding-left: 0;
+  }
+  body header nav.mobile-open ul li {
+    width: 100%;
+    display: block;
+  }
+  body header nav.mobile-open ul li a {
+    padding-left: 56px;
+  }
+  body header nav.mobile-open ul li:nth-of-type(1) {
+    width: 42px;
+    float: right;
+    padding-right: 8px;
+  }
+  body header nav.mobile-open ul li:nth-of-type(1):after {
+    content: "×";
+    font-weight: 100;
+    padding: 9px 0 9px;
+    font-size: 36px;
+  }
   body.home .jumbo {
     padding: 0 1.75rem;
   }
@@ -266,13 +305,24 @@ section #post-27 aside .form-page form input#submit {
     margin-top: 0;
   }
   body .white .owl-carousel .owl-stage-outer .owl-stage .owl-item .sa_hover_container {
-    height: 400px;
+    height: 100%;
+  }
+  body .white .owl-carousel .owl-stage-outer .owl-stage .owl-item img {
+    width: 100%;
   }
   body footer {
     padding: 0 1.75rem;
   }
+  body footer aside {
+    width: 100%;
+  }
   body footer aside ul {
-    margin-top: 1em;
+    float: left;
+    margin: 1em 0 2em;
+    padding-left: 0;
+  }
+  body footer aside ul li a {
+    text-align: left;
   }
   body section .post-module aside {
     height: initial;
@@ -303,7 +353,8 @@ section #post-27 aside .form-page form input#submit {
     padding: 1rem 0.5rem 1.5rem;
   }
   body section .post-module aside.text span a {
-    display: none;
+    padding: 0 0 25px 0;
+    font-size: 18px;
   }
   body section #post-27 aside {
     width: 100%;

@@ -1,9 +1,13 @@
 (function ($, root, undefined) {
-	
+      $(function() {
+        $("#menu-item-90").click(function(e) {
+           $("nav").toggleClass("mobile-open")
+        })
+      })
+
 	$(function () {
-		
 		'use strict';
-		
+
 		// grab url parameters
 		var getUrlParameter = function getUrlParameter(sParam) {
 		    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
@@ -23,12 +27,10 @@
 		// test if page has body class
 		if( $('body').hasClass('contact') ){
 			var $subject = getUrlParameter('subject')
-			
+
 			$('input#subject').attr('value', $subject)
 		} else {
 			console.log('This is not the contact page.')
 		}
-		
 	});
-	
 })(jQuery, this);
